@@ -15,7 +15,7 @@ let jsUser = {
   },
 };
 
-// Accessing Objects
+//🔸 Accessing Objects
 
 console.log(jsUser.age); // 32
 
