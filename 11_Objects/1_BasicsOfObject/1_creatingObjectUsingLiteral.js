@@ -9,10 +9,16 @@ let jsUser = {
   email: "harshm@gmail.com",
   isLoggedIn: true,
   lastLoginDays: ["Monday", "Friday"],
+
+  greetings: function () {
+    console.log(`Hello JS User, ${this.name}`);
+  },
 };
 
 // Accessing Objects
 
-console.log(jsUser.age);  // 32
+console.log(jsUser.age); // 32
 
 console.log(jsUser["lastLoginDays"]); // [ 'Monday', 'Friday' ]
+
+jsUser.greetings(); // Hello JS User, Harsh
