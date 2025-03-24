@@ -19,3 +19,5 @@ let arr1 = sum(10, 20, 30, 40);
 console.log(arr); // 60
 
 console.log(arr1); // 100
+
+console.log(total);
