@@ -21,3 +21,18 @@ function printElements(items) {
 }
 
 arr.forEach(printElements); // Here we are just passing reference of the function
+
+console.log();
+
+// 4️⃣ forEach Loop takes total 3 parameters not just element
+arr.forEach((ele, indexVal, arr) => {
+  console.log(ele, indexVal, arr);
+});
+
+/*
+Java 0 [ 'Java', 'Python', 'Swift', 'Go', 'Rust' ]
+Python 1 [ 'Java', 'Python', 'Swift', 'Go', 'Rust' ]
+Swift 2 [ 'Java', 'Python', 'Swift', 'Go', 'Rust' ]
+Go 3 [ 'Java', 'Python', 'Swift', 'Go', 'Rust' ]
+Rust 4 [ 'Java', 'Python', 'Swift', 'Go', 'Rust' ]
+*/
