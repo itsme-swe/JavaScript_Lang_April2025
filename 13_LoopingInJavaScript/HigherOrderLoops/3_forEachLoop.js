@@ -1,3 +1,21 @@
+/*
+💥 The Array.forEach() method takes a callback function as an argument, which is applied to each element of the array. The callback function receives three arguments:
+
+    🔸 currentValue: The current element being processed in the array.
+
+    🔸 index (optional): The index of the current element being processed.
+    
+    🔸 array (optional): The array forEach() was called upon.
+
+💥 Limitations of forEach() Method
+
+  🔸 No Break or Continue: Unlike for loops, you cannot break the forEach() loop or use continue to skip to the next iteration. It will always iterate over all elements.
+
+  🔸 No Return Value: The forEach() loop does not return a new array, it returns undefined.
+  
+  🔸 Asynchronous Issues: The forEach() loop does not handle asynchronous operations well. If you need to perform asynchronous operations, consider using for…of with   async/await or Promise.all.
+*/
+
 let arr = ["Java", "Python", "Swift", "Go", "Rust"];
 
 arr.forEach(function (val) {
