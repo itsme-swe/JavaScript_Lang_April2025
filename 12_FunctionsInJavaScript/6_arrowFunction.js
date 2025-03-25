@@ -25,4 +25,16 @@ console.log(pow(2)); // 32
 
 2️⃣ If we don't want to use curly braces we wrap it inside parenthesis.
 
+3️⃣ To return the object we need to wrap the object inside parenthesis.
+
 */
+
+console.log();
+
+//🔸 Passing object inside arrow function
+const person = () => ({
+  name: "Harsh",
+  age: 32,
+});
+
+console.log(person()); // { name: 'Harsh', age: 32 }
