@@ -21,3 +21,27 @@ let str = ["Java", "Python", "Go", "Rust"];
 let sumLength = str.reduce((acc, str) => acc + str.length, 0);
 
 console.log(sumLength); // 16
+
+console.log();
+
+// 3️⃣ Calculating the price of items from the array of object
+const carItems = [
+  {
+    itemName: "Music System",
+    price: 1000,
+  },
+
+  {
+    itemName: "Suspension",
+    price: 50000,
+  },
+
+  {
+    itemName: "Snorkel",
+    price: 20000,
+  },
+];
+
+const totalBill = carItems.reduce((acc, items) => acc + items.price, 0);
+
+console.log(totalBill.toLocaleString("en-IN")); // 71,000
