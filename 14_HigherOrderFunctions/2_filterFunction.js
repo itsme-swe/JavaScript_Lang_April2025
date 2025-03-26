@@ -25,7 +25,7 @@ const givenPopulation = [
 ];
 
 const newPopulation = givenPopulation.filter(
-  ({ population }) => population >= 5000000
+  (ele) => ele.population >= 5000000
 );
 
 console.log(newPopulation);
