@@ -1,6 +1,6 @@
 new Promise((res, rej) => {
   setTimeout(() => {
-    let error = false;
+    let error = true;
     if (!error) {
       res({ name: "xyz", email: "abc@yzx.com", phone: "apple" });
     } else {
@@ -17,4 +17,13 @@ new Promise((res, rej) => {
   })
   .catch((error) => {
     console.log(error);
+  })
+  .finally(() => {
+    console.log("The promise is either resolved or rejected");
   });
+
+/*
+output ⇨ 
+ERROR: Something went wrong
+The promise is either resolved or rejected
+*/
