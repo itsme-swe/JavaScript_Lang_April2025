@@ -11,7 +11,7 @@ api.createOrder(cart, function () {
 
 console.log();
 
-// 2️⃣ Now we'll be using Promise Chaining to handle callback hell
+// 2️⃣ Now we'll be using Promise Chaining to come out of callback hell
 
 api
   .createOrder(cart)
