@@ -16,11 +16,11 @@ console.log();
 api
   .createOrder(cart)
   .then(function (orderId) {
-    api.makePayment(orderId);
+    return api.makePayment(orderId);
   })
   .then(function (paymentInfo) {
-    api.showOrderSummary(paymentInfo);
+    return api.showOrderSummary(paymentInfo);
   })
   .then(function (orderSummary) {
-    api.updateWallet(orderSummary);
+    return api.updateWallet(orderSummary);
   });
