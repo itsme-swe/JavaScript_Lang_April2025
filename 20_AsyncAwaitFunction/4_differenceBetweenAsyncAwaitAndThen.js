@@ -15,4 +15,26 @@ async function handlePromise() {
   console.log(val);
 }
 
+handlePromise();
+
+/*
+◽ output ⇨
+₁ I am async await
+₂ Promise resolved
+*/
+
 console.log();
+
+//2️⃣ Using .then()
+function getData() {
+  p.then((res) => console.log(res)).catch((err) => console.error(err));
+  console.log("Promise resolved using .then()");
+}
+
+getData();
+
+/*
+◽ output ⇨
+₁ Promise resolved using .then()
+₂ Promise resolved
+*/
